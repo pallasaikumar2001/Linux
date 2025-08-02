@@ -1,0 +1,65 @@
+.display{
+    height: 50px;
+    width: 300px;
+    background-color: rgba(169, 169, 169, 0.562);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 150%;
+    box-shadow: 3px 4px gray;
+}
+.clicker{
+    height:70px;
+    width: 70px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(223, 217, 217);
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+}
+.reset{
+    height: 40px;
+    width: 100px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 150%;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 4px gray;
+    align-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.controllers{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.clicker:hover{
+    transform: scale(1.1);
+    background-color: rgb(51, 179, 51);
+}
+.reset:hover {
+    background-color: rgb(27, 235, 235);
+    transform: scale(1.1);
+}
+  
+  .btn:hover {
+    background-color: red;
+  }

@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:India Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Sita Dhuri:mailto:sdhuri@cartesianconsulting.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Pearl Dsou
+ za:mailto:pdsouza@cartesianconsulting.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=pallasaiku
+ mar2001@gmail.com:mailto:pallasaikumar2001@gmail.com
+ATTACH:CID:D603C4938FD19F4E83AB2A22712EA5C1@INDP287.PROD.OUTLOOK.COM
+DESCRIPTION;LANGUAGE=en-US:\n______________________________________________
+ __________________________________\nMicrosoft Teams Need help?<https://aka
+ .ms/JoinTeamsMeeting?omkt=en-US>\nJoin the meeting now<https://teams.micro
+ soft.com/l/meetup-join/19%3ameeting_ZTMzMzc1ZTEtZjExMi00MjY4LWFiNmItMmJlMz
+ U3ZGJlYjc2%40thread.v2/0?context=%7b%22Tid%22%3a%22b34e9c2b-df67-4cf9-9666
+ -6eedb2da8eec%22%2c%22Oid%22%3a%22f803a133-e9c1-4624-9086-2cfda85e365f%22%
+ 7d>\nMeeting ID: 424 874 972 063 2\nPasscode: 52So6rh6\n__________________
+ ______________\nFor organizers: Meeting options<https://teams.microsoft.co
+ m/meetingOptions/?organizerId=f803a133-e9c1-4624-9086-2cfda85e365f&tenantI
+ d=b34e9c2b-df67-4cf9-9666-6eedb2da8eec&threadId=19_meeting_ZTMzMzc1ZTEtZjE
+ xMi00MjY4LWFiNmItMmJlMzU3ZGJlYjc2@thread.v2&messageId=0&language=en-US>\n[
+ https://www.solus.ai/wp-content/uploads/2021/08/Solus-Logo-New-1.0.png]\n_
+ __________________________________________________________________________
+ _____\n\n
+UID:040000008200E00074C5B7101A82E00800000000D0A7F18BD0F7DB01000000000000000
+ 01000000035FA5243B8EF6341AF4A1B3EAD6ACDB8
+SUMMARY;LANGUAGE=en-US:Cartesian Interview PE - Palla Sai Kumar
+DTSTART;TZID=India Standard Time:20250722T103000
+DTEND;TZID=India Standard Time:20250722T113000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250721T124836Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:3
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:3
+X-MICROSOFT-CDO-OWNERAPPTID:-1804437527
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_ZTMzMzc1ZTEtZjExMi00MjY4LWFiNmItMmJlMzU3ZGJlYjc2%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22b34e9c2b-df67-4cf9-9666-6eedb2da8eec%22%2c%22O
+ id%22%3a%22f803a133-e9c1-4624-9086-2cfda85e365f%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/b34e9c2b-df67-4cf9-9666-6eedb2da8eec/f803a133-e9c1-4624-9086-2
+ cfda85e365f/19_meeting_ZTMzMzc1ZTEtZjExMi00MjY4LWFiNmItMmJlMzU3ZGJlYjc2@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_ZTMzMzc1ZTEtZjExMi00MjY
+ 4LWFiNmItMmJlMzU3ZGJlYjc2@thread.v2"\,"private":true\,"type":0\,"mid":0\,"
+ rid":0\,"uid":null}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONS:[ { "DisplayName" : "Microsoft Teams Meeting"\, "Loca
+ tionAnnotation" : ""\, "LocationSource" : 0\, "Unresolved" : false\, "Loca
+ tionUri" : "" } ]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

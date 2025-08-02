@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signals</title>
+    <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+    <div class="signals">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+    <div class="rule"><h3>STOP</h3></div>
+</body>
+</html>
+<script>
+        const red = document.querySelector('.red');
+        const yellow = document.querySelector('.yellow');
+        const green = document.querySelector('.green');
+        const ruleText=document.querySelector(".rule h3");
+
+        function startTrafficLight() {
+            ruleText.innerText="STOP"
+            red.style.backgroundColor = 'red';
+            setTimeout(() => {
+                red.style.backgroundColor = 'gray';
+                yellow.style.backgroundColor = 'yellow';
+                ruleText.innerText = "READY"; 
+                setTimeout(() => {
+                    yellow.style.backgroundColor = 'gray';
+                    green.style.backgroundColor = 'rgb(46, 223, 46)';
+                    ruleText.innerText = "GO"; 
+                    setTimeout(() => {
+                        green.style.backgroundColor = 'gray';
+                        startTrafficLight(); // Restart cycle
+                    }, 3000);
+                }, 3000);
+            }, 3000);
+        }
+
+        startTrafficLight(); // Start the cycle
+    </script>

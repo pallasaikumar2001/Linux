@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1>one</h1>
+    <button class="decrease">-</button>
+    <button class="reset">Reset</button>
+    <button class="increase">+</button>
+
+
+</body>
+</html>
+<script>
+    let count=0
+    const display=document.querySelector('h1')
+    const dec=document.getElementsByClassName("decrease")[0];
+    const inc=document.getElementsByClassName("increase")[0];
+    const reset=document.getElementsByClassName("reset")[0];
+
+    dec.addEventListener("click",()=>{
+        count-=1;
+        display.textContent=count
+    })
+    reset.addEventListener("click",()=>{
+        count=0;
+        display.textContent=count
+    })
+    inc.addEventListener('click',()=>{
+        count+=1;
+        display.textContent=count;
+    });
+
+</script>

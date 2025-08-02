@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+    <style>
+        .container {
+                height: 150px;
+                width: 300px;
+                background-color: green;
+                text-align: center;
+                color: white;
+                font-size: 30px;
+                margin: auto;
+                font-weight: bolder;
+                font-family: -apple-system, BlinkMacSystemFont,
+                            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                            'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        * {
+            font-family: -apple-system, BlinkMacSystemFont,
+              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+              'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">GeeksforGeeks</div>
+
+    <h3>Message will be displayed when you press a enter key</h3>
+    <input type="text" class="inputarea">
+    <p></p>
+
+
+    <h1>GeeksforGeeks</h1>
+    <h2>touchend Event</h2>
+    <br>
+ 
+    <p ontouchend="end()">
+      Touch somewhere in the paragraph and then
+      release the touch to trigger the touchend function.
+    </p>
+ 
+ 
+    <br>
+ 
+    <p id="test"></p>
+    <script>
+
+        let container=document.querySelector('.container');
+        container.addEventListener('click',function(e){
+            container.style.color="black"
+        })
+
+        let input=document.querySelector(".inputarea");
+        let p=document.querySelector("p")
+        input.addEventListener('keydown',function(e){
+            if(e.keyCode==13){
+                p.textContent="You pressed an Enter"
+                console.log("Enter button")
+            }
+        })
+
+        function end() {
+           
+            document.getElementById(
+                "test").innerHTML =
+                "Touch has been released.";
+                console.log("Touch has been released")
+        }
+        
+    </script>
+
+</body>
+</html>

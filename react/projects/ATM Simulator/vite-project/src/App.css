@@ -1,0 +1,53 @@
+body{
+  background-color: white;
+  color: black;
+}
+.container{
+  height: 150px;
+  width: 80vw;
+  border: 1px solid rgb(206, 202, 202);
+  padding-top: 30px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.row-1{
+  display: flex;
+  align-items: center;
+  height: 40%;
+  justify-content: center;
+}
+.row-2{
+  display: flex;
+  align-items: center;
+  height: 40%;
+  justify-content: space-evenly;
+}
+.pinbar{
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  margin: 0px 10px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+button{
+  height: 100%;
+  width: 20%;
+  background-color: rgb(226, 227, 228);
+  border: 1px solid black;
+  color: black;
+}
+.check,.deposite,.withdraw,.logout{
+  margin-top: 10px;
+  height: 80%;
+  width: 20%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 227, 228);
+  border-radius: 3px;
+}

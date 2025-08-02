@@ -1,0 +1,42 @@
+.container{
+  height: 250px;
+  width: 500px;
+  border: 1px solid black;
+  margin:0px;
+  padding: 2rem;
+  box-shadow: inset 0px 0px 5px 0px;
+}
+.temps{
+  display: flex;
+  justify-content: space-between;
+}
+.convert{
+  margin-top: 1rem;
+  height: 40px;
+  width: 100px;
+  border: 1px solid black;
+  font-size: larger;
+  background-color: aqua;
+  color: black;
+}
+.result{
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.temp-input{
+  height: 40px;
+  width: 270px;
+  border: 1px solid black;
+  cursor: text;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+body{
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  padding: 3rem;
+}

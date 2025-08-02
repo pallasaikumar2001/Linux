@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="page 1">
+            <h1>this is page one content</h1>
+            <p>fguyrgfyugyfhrih huygerguyrg gyrguhhgh rgyrhghiriethth</p>
+        </div>
+        <div class="page 2">
+            <h1>this is page two content</h1>
+            <p>fguyrgfyugyfhrih huygerguyrg gyrguhhgh rgyrhghiriethth</p>
+        </div>
+        <div class="page 3">
+            <h1>this is page three content</h1>
+            <p>fguyrgfyugyfhrih huygerguyrg gyrguhhgh rgyrhghiriethth</p>
+        </div>
+        <div class="next">Next</div>
+        <div class="prev">Prev</div>
+    </div>
+    <script>
+        const pages=document.querySelectorAll(".page");
+        const next=document.querySelector(".next");
+        const prev=document.querySelector(".prev")
+
+        let curr=0;
+        function updatePage(){
+            pages.forEach((page,index)=>{
+                page.style.display = index===curr ? "block":"none"
+            })
+        }
+        updatePage();
+
+        next.addEventListener("click",()=>{
+            if(curr<pages.length-1){
+                curr++
+                updatePage();
+            }
+        })
+        prev.addEventListener("click",()=>{
+            if(curr>0){
+                curr--
+                updatePage();
+            }
+        })
+
+        console.log(pages)
+    </script>
+</body>
+</html>

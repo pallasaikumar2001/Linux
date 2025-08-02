@@ -1,0 +1,14 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.display{
+    height: 100px;
+    width: 500px;
+    border: 1px solid black;
+}
+.plus,.minus,.reset{
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+}

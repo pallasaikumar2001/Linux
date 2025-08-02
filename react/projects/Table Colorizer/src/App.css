@@ -1,0 +1,42 @@
+.bxs {
+  width: 60px;
+  height: 60px;
+  background-color: white; /* white by default */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 24px;
+  border: 1px solid #000;
+  transition: background-color 0.3s;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+input {
+  width: 250px;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color,
+.clear {
+  padding: 8px 12px;
+  background-color: lightgray;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.row1, .row2, .row3 {
+  display: flex;
+}

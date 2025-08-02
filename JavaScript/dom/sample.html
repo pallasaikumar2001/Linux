@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+</head>
+<body>
+    <div class="container" style="display: flex;">
+        <div class="inn" style="height:300px; width:300px; background-color:red"></div>
+        <div class="inn" style="height:300px; width:300px; background-color:yellow"></div>
+        <div class="inn" style="height:300px; width:300px; background-color:blue"></div>
+        <div class="inn" style="height:300px; width:300px; background-color:aqua"></div>
+    </div>
+    <button class="prev" style="padding: 10px; margin-top: 20px;">Prevoius Color</button>
+    <button class="next" style="padding: 10px; margin-top: 20px;">Next Color</button>
+
+    <script>
+        const next=document.querySelector(".next");
+        const prev=document.querySelector(".prev")
+        const inns=document.querySelectorAll(".inn")
+        let count=0;
+    
+        function updateDisplay(){
+            inns.forEach((div,index)=>{
+                div.style.display=index===count ? "block":"none"
+            })
+        }
+        updateDisplay()
+    
+        next.addEventListener("click",()=>{
+            count=(count+1)%inns.length;
+            updateDisplay();
+    
+        })
+        .prev.addEventListener("click",()=>{
+            count=(count-1+inns.length)%inns.length;
+            updateDisplay();
+        })
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display"></div>
+        <div class="btns">
+            <div class="row1">
+                <div class="buttons seven"><b>7</b></div>
+                <div class="buttons eight"><b>8</b></div>
+                <div class="buttons nine"><b>9</b></div>
+                <div class="buttons nine"><b>*</b></div>
+            </div>
+            <div class="row2">
+                <div class="buttons four"><b>4</b></div>
+                <div class="buttons five"><b>5</b></div>
+                <div class="buttons six"><b>6</b></div>
+                <div class="buttons nine"><b>-</b></div>
+            </div>
+            <div class="row3">
+                <div class="buttons one"><b>1</b></div>
+                <div class="buttons two"><b>2</b></div>
+                <div class="buttons three"><b>3</b></div>
+                <div class="buttons nine"><b>+</b></div>
+            </div>
+            <div class="row4">
+                <div class="buttons dot"><b>.</b></div>
+                <div class="buttons zero"><b>0</b></div>
+                <div class="buttons division"><b>/</b></div>
+                <div class="buttons equals"><b>=</b></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const display = document.querySelector('.display');
+        const buttons = document.querySelectorAll('.buttons');
+    
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const value = button.textContent.trim();
+                if (value === '=') {
+                    try {
+                        display.textContent = eval(display.textContent);
+                    } catch {
+                        display.textContent = "Error";
+                    }
+                } else {
+                    display.textContent += value;
+                }
+            });
+        });
+    </script>   
+</body>
+</html>

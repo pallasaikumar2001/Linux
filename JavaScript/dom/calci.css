@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 50vh;
+    background-color:beige;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    border-radius: 0.5rem;
+}
+.display{
+    height: 23%;
+    width: 85%;
+    background-color: aliceblue;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.row1,.row2,.row3,.row4{
+    display: flex;
+    column-gap: 0.9rem;
+    align-items: center;
+    
+}
+.buttons{
+    font-size: 180%;
+    height: 7rem;
+    width: 6rem;
+    background-color: rgb(176, 245, 245);
+    border: 1px solid rgb(40, 40, 250);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons:hover{
+    transform: scale(1.05);
+    background-color: cyan;
+}
+.equals{
+    background-color:white;
+    color: red;
+}
+.equals:hover{
+    background-color: red;
+    color:aliceblue
+}

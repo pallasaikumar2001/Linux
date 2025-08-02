@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Alerts/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alerts/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exceptionhandling/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exceptionhandling/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flipkart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flipkart/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Listeners/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Listeners/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TestNGannotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TestNGannotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/locators/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/locators/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seli1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seli1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testwriting/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testwriting/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webelements/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webelements/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblocators/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weblocators/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/websearch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/websearch/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

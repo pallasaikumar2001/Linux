@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicks Counter</title>
+    <link rel="stylesheet" href="clickcounter.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display"></div>
+        <div class="controllers">
+            <div class="clicker">
+                <div class="btn"> <b>Click</b></div>
+            </div>
+            <div class="reset"><b>Reset</b></div>
+        </div>
+    </div>
+    <script>
+        const disp=document.querySelector('.display')
+        const clicker=document.querySelector('.clicker')
+        const reset=document.querySelector('.reset')
+        const btn=document.querySelector('btn')
+        let count=0
+        
+        disp.innerHTML=count
+        
+        clicker.addEventListener('click',()=>{
+            count+=1;
+            disp.innerHTML=count
+        })
+        reset.addEventListener('click',()=>{
+            count=0
+            disp.innerHTML=count
+        })
+        
+    </script>
+</body>
+</html>

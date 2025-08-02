@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>GeeksforGeeks</h2>
+    <p id="intro">A somputer science portal for the geeks</p>
+    <p>this is example illustrates the <b>get element by Id </b>method.</p>
+    <p id="demo"></p>
+    <script>
+        const element=document.getElementById('intro');
+        document.getElementById('demo').innerHTML="geeks for geeks introduciton is: "+element.innerHTML;
+
+        element.innerHTML="this is new text";
+        element.style.fontSize="20px";
+        element.style.color="blue";
+        
+        let divelement=document.createElement('div')
+        divelement.textContent="Hello, I am div";
+        divelement.style.color="black";
+        document.body.appendChild(divelement)
+        document.write(Date());
+        window.alert("hello")
+        console.log(window.innerWidth)
+        console.log(screen.width)
+        console.log(screen.height)
+    </script>
+</body>
+</html>

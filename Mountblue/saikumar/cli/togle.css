@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.566);
+    font-family: Arial, sans-serif;
+}
+
+.parent-box {
+    height: 50vh;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.head {
+    margin-bottom: 20px;
+}
+
+.toggle-label-text {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.toggle-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.toggle-label:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.toggle-input:checked + .toggle-label {
+    background-color: #2196F3;
+}
+
+.toggle-input:checked + .toggle-label:before {
+    transform: translateX(30px);
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.basic, .professional, .master {
+    padding: 20px;
+    width: 200px;
+    background-color: rgb(245, 248, 248);
+    border-radius: 4%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.basic:hover, .professional:hover, .master:hover {
+    background-color: rgb(136, 136, 218);
+    transform: scale(1.1);
+    color: white;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+button {
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(136, 136, 218);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(136, 136, 218);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

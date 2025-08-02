@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display"></div>
+        <div class="minus">Decrease</div>
+        <div class="plus">Increase</div>
+        <div class="reset">Reset</div>
+    </div>  
+    <script>
+        const disp=document.querySelector('.display')
+        const minus=document.querySelector(".minus")
+        const plus=document.querySelector(".plus")
+        const reset=document.querySelector(".reset")
+        var count=0;
+
+        disp.innerHTML=count
+
+        minus.addEventListener("click",()=>{
+            count-=1
+            disp.innerHTML=count
+        })
+        plus.addEventListener('click',()=>{
+            count+=1
+            disp.innerHTML=count
+        })
+        reset.addEventListener('click',()=>{
+            count=0;
+            disp.innerHTML=count
+        })
+    </script>  
+</body>
+</html>

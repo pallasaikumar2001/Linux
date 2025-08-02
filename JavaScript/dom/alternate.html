@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternate</title>
+    <link rel="stylesheet" href="alternate.css">
+</head>
+<body>
+    <div class="main">
+        <div class="mode">
+            <div class="btn"></div>
+        </div>
+        <div class="container">
+            <div class="outer">
+                <div class="inner"></div>
+                <div class="inner"></div>
+                <div class="inner"></div>
+            </div>
+            <div class="outer">
+                <div class="inner"></div>
+                <div class="inner"></div>
+                <div class="inner"></div>
+            </div>
+            <div class="outer">
+                <div class="inner"></div>
+                <div class="inner"></div>
+                <div class="inner"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const innerboxes=document.querySelectorAll('.inner');
+        const button = document.querySelector('.btn');
+        const body=document.querySelector('body')
+
+        let isMoved=false;
+        
+        button.addEventListener('click', () => {
+            if(!isMoved){    
+                button.style.transform = 'translateX(35px)';
+                body.style.backgroundColor='rgba(41, 39, 39, 0.808)';
+            }else{
+                button.style.transform = 'translateX(0px)';
+                body.style.backgroundColor='white';
+            }
+            isMoved=!isMoved
+        });
+        
+        let changed=false
+        
+        innerboxes.forEach((box)=>{
+            box.addEventListener('click',()=>{
+                if(!changed){
+                    box.style.backgroundColor='red';
+                }else{
+                    box.style.backgroundColor='aqua';
+                }
+                changed=!changed
+            });
+        });
+    </script>
+</body>
+</html>
